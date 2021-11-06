@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Request</title> 
-    <link rel="stylesheet" href="./style.css">
+    <title>API Request</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <script src="./app.js"></script>
 </head>
+
 <body>
-<!--
+    <!--
  <h1>
         API Request check
 </h1>
@@ -42,18 +45,77 @@
     </p>
     <button onclick="getPresidents4()">GETREQ</button>
 -->
-<!-- Hier wird der einzelne Scan entwickelt-->
+    <!-- Hier wird der einzelne Scan entwickelt-->
     <h1>Memorial Room</h1>
+<table border="1">
+    <tr width="100%" height="400">
+    <p>
+        Name: <span id="name"></span>
+        <br />
+        Year: <span id="year"></span>
+        <br />
+        i: <span id="i"></span>
+    </p>
 
-        <p>
-            Name: <span id="name"></span>
-            <br />
-            Year: <span id="year"></span>
-            <br />
-            i: <span id="i"></span>
-        </p>
-        <img id="img" height = "250" src="">
-        <button onclick="getPresidents()">Scan RFID</button>
+    <img height="250" id="img1" src="">
     
-    </body>
+    <td style="width:20%" id="president">
+        <div style="display:none" class="w3-quarter">
+            <img id="img1" src="" style="width:100%">
+            <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </td>
+    <button onclick="getPresidents()">Scan RFID</button>
+</tr>
+<tr width="100%" height="400">
+    <div class="w3-row-padding w3-padding-16 w3-center" id="presidentsGrid">
+        <table border="1">
+            <tr style="width:100%">
+                <td style="width:20%" id="president1">
+                    <div style="display:none" class="w3-quarter">
+                        <img id="img1" src="" style="width:100%">
+                        <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </td>
+                <td style="width:20%" id="president2">
+                    <div style="display:none" class="w3-quarter">
+                        <img id="img2" src="" style="width:100%">
+                        <h3>Let Me Tell You About This Steak</h3>
+                        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum
+                            lipsum.</p>
+                    </div>
+                </td>
+                <td style="width:20%" id="president3">
+                    <div style="display:none" class="w3-quarter">
+                        <img id="img3" src="" style="width:100%">
+                        <h3>Cherries, interrupted</h3>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                        <p>What else?</p>
+                    </div>
+                </td>
+                <td style="width:20%" id="president4">
+                    <div style="display:none" class="w3-quarter">
+                        <img id="img4" src="" style="width:100%">
+                        <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </td>
+                <td style="width:20%" id="president5">
+                    <div style="display:none" class="w3-quarter">
+                        <img id="img5" src="" style="width:100%">
+                        <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                        <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</tr>
+
+</table>
+
+</body>
+
 </html>

@@ -68,7 +68,10 @@ async function getPresidents() {
         var { name, year, imgPath } = data;
 
         document.getElementById('name').textContent = name;
-        document.getElementById('img').src = imgPath;
+        document.getElementById('img'+i).src = imgPath;
+        console.log('img');
         document.getElementById('year').textContent = year;
         document.getElementById('i').innerHTML = i;
+        console.log('president'+i);
+        document.getElementById("president").firstChild.style = "";
 }
