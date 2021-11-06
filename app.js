@@ -65,9 +65,10 @@ async function getPresidents() {
     var api = "https://61867a63cd8530001765ab06.mockapi.io/olhafa/presidents/"+i;
         var response = await fetch(api);
         var data = await response.json();
-        var { name, year } = data;
+        var { name, year, imgPath } = data;
 
         document.getElementById('name').textContent = name;
+        document.getElementById('img').src = imgPath;
         document.getElementById('year').textContent = year;
         document.getElementById('i').innerHTML = i;
 }
