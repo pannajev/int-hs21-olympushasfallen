@@ -12,8 +12,8 @@ var i = numbers[Math.floor(Math.random()*numbers.length)]
                 var { name, year, imgPath } = data;
 
                 document.getElementById('name').textContent = name;
-                //document.getElementById('img').src = imgPath;
                 document.getElementById('year').textContent = year;
+                document.getElementById('img').src = imgPath;
                 document.getElementById('i').innerHTML = i;
                 document.getElementById("demo").innerHTML = "Nice gefunden"  
             x++; 
