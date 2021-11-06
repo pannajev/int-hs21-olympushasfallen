@@ -2,9 +2,10 @@ var api1 = "https://61867a63cd8530001765ab06.mockapi.io/olhafa/presidents/1";
 async function getPresidents1() {
         var response = await fetch(api1);
         var data = await response.json();
-        var { name, year } = data;
+        var { name, year, imgPath } = data;
 
         document.getElementById('name1').textContent = name;
+        document.getElementById('img1').src = imgPath;
         document.getElementById('year1').textContent = year;
     }
 
