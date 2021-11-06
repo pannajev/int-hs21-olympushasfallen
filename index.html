@@ -14,77 +14,58 @@
 <body>
 
     <h1>Memorial Room</h1>
-    <table border="1">
-        <tr width="100%" height="400">
-            <p>
-                Name: <span id="name"></span>
-                <br />
-                Year: <span id="year"></span>
-                <br />
-                i: <span id="i"></span>
-                <br />
-                status: <span id="demo"></span>
-            </p>
+    <p>
+        Name: <span id="name"></span>
+        <br />
+        Year: <span id="year"></span>
+        <br />
+        i: <span id="i"></span>
+        <br />
+        status: <span id="demo"></span>
+    </p>
 
+    <!-- <img height="250" id="img" src=""> -->
+
+    <td style="width:20%" id="president">
+        <div id="president" style="" class="w3-quarter">
             <img height="250" id="img" src="">
+            <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </td>
 
-            <td style="width:20%" id="president">
-                <div style="display:none" class="w3-quarter">
-                    <img id="img1" src="" style="width:100%">
-                    <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-                    <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-                </div>
-            </td>
-            <button onclick="getPresidents()">Scan RFID</button>
-        </tr>
-        <tr width="100%" height="400">
-            <div class="w3-row-padding w3-padding-16 w3-center" id="presidentsGrid">
-                <table border="1">
-                    <tr style="width:100%">
-                        <td style="width:20%" id="president1">
-                            <div style="display:none" class="w3-quarter">
-                                <img id="img1" src="" style="width:100%">
-                                <h3>The Perfect Sandwich, A Real NYC Classic</h3>
-                                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-                            </div>
-                        </td>
-                        <td style="width:20%" id="president2">
-                            <div style="display:none" class="w3-quarter">
-                                <img id="img2" src="" style="width:100%">
-                                <h3>Let Me Tell You About This Steak</h3>
-                                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt
-                                    ipsum
-                                    lipsum.</p>
-                            </div>
-                        </td>
-                        <td style="width:20%" id="president3">
-                            <div style="display:none" class="w3-quarter">
-                                <img id="img3" src="" style="width:100%">
-                                <h3>Cherries, interrupted</h3>
-                                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-                                <p>What else?</p>
-                            </div>
-                        </td>
-                        <td style="width:20%" id="president4">
-                            <div style="display:none" class="w3-quarter">
-                                <img id="img4" src="" style="width:100%">
-                                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-                                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-                            </div>
-                        </td>
-                        <td style="width:20%" id="president5">
-                            <div style="display:none" class="w3-quarter">
-                                <img id="img5" src="" style="width:100%">
-                                <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
-                                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </tr>
 
-    </table>
+    <button onclick="getPresidents()">Scan RFID</button>
+    
+    
+    <div class="w3-row-padding w3-padding-16 w3-center">
+        <div style="" class="w3-quarter">
+            <img id="img1" src="" style="width:20%">
+            <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div style="" class="w3-quarter">
+            <img id="img2" src="" style="width:20%">
+            <h3>Let Me Tell You About This Steak</h3>
+            <p>Once again, some random text to lorem lorem lorem lorem tincidunt.</p>
+        </div>
+        <div style="" class="w3-quarter">
+            <img id="img3" src="" style="width:20%">
+            <h3>Cherries, interrupted</h3>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            <p>What else?</p>
+        </div>
+        <div style="" class="w3-quarter">
+            <img id="img4" src="" style="width:20%">
+            <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div style="" class="w3-quarter">
+            <img id="img5" src="" style="width:20%">
+            <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </div>
 
 </body>
 

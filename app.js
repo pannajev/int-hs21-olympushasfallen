@@ -13,9 +13,10 @@ var i = numbers[Math.floor(Math.random()*numbers.length)]
 
                 document.getElementById('name').textContent = name;
                 document.getElementById('year').textContent = year;
-                document.getElementById('img').src = imgPath;
                 document.getElementById('i').innerHTML = i;
-                document.getElementById("demo").innerHTML = "Nice gefunden"  
+                document.getElementById("demo").innerHTML = "Nice gefunden"
+                document.getElementById('img'+i).src = imgPath;
+                document.getElementById('president').style = "";
             x++; 
         }
         else {
