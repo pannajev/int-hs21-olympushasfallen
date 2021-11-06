@@ -18,7 +18,6 @@ async function getPresidents() {
             document.getElementById("demo").innerHTML = "Nice gefunden";
             document.getElementById('img' + i).src = imgPath;
             document.getElementById('president').style = "";
-            document.getElementById('numberofx').innerHTML = x;
         }
         else {
             document.getElementById('i').innerHTML = i;
