@@ -1,4 +1,4 @@
-var api1 = "https://61867a63cd8530001765ab06.mockapi.io/olhafa/presidents/1";
+/* var api1 = "https://61867a63cd8530001765ab06.mockapi.io/olhafa/presidents/1";
 async function getPresidents1() {
         var response = await fetch(api1);
         var data = await response.json();
@@ -47,3 +47,26 @@ async function getPresidents5() {
         document.getElementById('name5').textContent = name;
         document.getElementById('year5').textContent = year;
     }
+
+*/
+var numbers = ["1","2","3","4","5","6"] 
+var i =  Math.floor(Math.random() * numbers.length);
+
+
+// Randomizer for Zahlen von 1 - 10
+//var i = 0;
+async function getPresidents() {
+    //i += 1;
+    var numbers = ["1","2","3","4","5","6"] 
+    var i =  Math.floor(Math.random() * numbers.length);
+    
+    
+    var api = "https://61867a63cd8530001765ab06.mockapi.io/olhafa/presidents/"+i;
+        var response = await fetch(api);
+        var data = await response.json();
+        var { name, year } = data;
+
+        document.getElementById('name').textContent = name;
+        document.getElementById('year').textContent = year;
+        document.getElementById('i').innerHTML = i;
+}
