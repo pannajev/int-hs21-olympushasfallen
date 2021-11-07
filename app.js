@@ -64,31 +64,31 @@ function loadPresidentTask() {
 
         console.log(randomID);
         // console.log(document.getElementById(presidentImg).src);
-        document.getElementById("presidentImg").src = imgPath;
-        document.getElementById("presidentImg").name = "george washington"
+        document.getElementById("level2presidentImg").src = imgPath;
+        document.getElementById("level2presidentImg").name = "george washington"
     } else if (randomID == 1) {
         
         var imgPath = "https://upload.wikimedia.org/wikipedia/commons/4/44/Abraham_Lincoln_head_on_shoulders_photo_portrait.jpg"
 
         console.log(randomID);
         // console.log(document.getElementById(presidentImg).src);
-        document.getElementById("presidentImg").src = imgPath;
-        document.getElementById("presidentImg").name = "abraham lincoln"
+        document.getElementById("level2presidentImg").src = imgPath;
+        document.getElementById("level2presidentImg").name = "abraham lincoln"
     } else if (randomID == 2) {
         
         var imgPath = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BenFranklinDuplessis.jpg/1200px-BenFranklinDuplessis.jpg"
 
         console.log(randomID);
         // console.log(document.getElementById(presidentImg).src);
-        document.getElementById("presidentImg").src = imgPath;
-        document.getElementById("presidentImg").name = "benjamin franklin"
+        document.getElementById("level2presidentImg").src = imgPath;
+        document.getElementById("level2presidentImg").name = "benjamin franklin"
     }
 }
 
 function Level2CheckPresidentName() {
-    let inputValue = document.getElementById("presidentName").value;
+    let inputValue = document.getElementById("level2presidentName").value;
     // console.log(inputValue.toLowerCase());
-    if (inputValue.toLowerCase() == document.getElementById("presidentImg").name) {
+    if (inputValue.toLowerCase() == document.getElementById("level2presidentImg").name) {
         alert("Das war richtig! Gratuliere!");
         window.location.href = 'levelthree_des.html';
     } else {
