@@ -28,17 +28,41 @@ async function getPresidents() {
             var data = await response.json();
             var { name, year, imgPath } = data;
 
+            var orderNumberAPI = i;
+            const postData = {
+                "orderNumber": orderNumberAPI,
+            }
+            fetch('https://61867a63cd8530001765ab06.mockapi.io/olhafa/orderNum/'+x, {
+                method: 'put',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(postData)
+            });
+
+/*            var putData = {};
+            putData.id = x;
+            putData.orderNumber = i;
+            var json = JSON.stringify(putData);
+
+            const xhr = new XMLHttpRequest();
+                xhr.open("PUT", "https://61867a63cd8530001765ab06.mockapi.io/olhafa/orderNum/"+x);
+                xhr.setRequestHeader("Content-type", "application/json")
+                xhr.onload = () => {
+                    const data = xhr.response;
+                    console.log(data);
+                };
+            xhr.send(json);
+*/
             document.getElementById('name' + i).textContent = name;
             document.getElementById('year' + i).textContent = year;
             document.getElementById('i').innerHTML = i;
             document.getElementById("demo").innerHTML = "Nice gefunden";
             document.getElementById('img' + i).src = imgPath;
-            document.getElementById('president').style = "";
         }
         else {
             document.getElementById('i').innerHTML = i;
             document.getElementById("demo").innerHTML = "Das war leider kein richtiger Kletterpunkt"
-            document.getElementById('numberofx').innerHTML = x;
         }
     }
     else {
@@ -95,6 +119,10 @@ function Level2CheckPresidentName() {
         alert("Das war falsch :(\n\nProbiere es nochmal...");
     };
 }
+
+// Event Listener Funktion für Enter Eingabe beim Präsidentennamen
+// var input = document.getElementById("level2InputButton");
+// input.addEventListener("keyup", function(event)) 
 
 // Level Two App -> Level Three Decription
 function getPresidentName() {
