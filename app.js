@@ -40,26 +40,9 @@ async function getPresidents() {
                 body: JSON.stringify(postData)
             });
 
-/*            var putData = {};
-            putData.id = x;
-            putData.orderNumber = i;
-            var json = JSON.stringify(putData);
-
-            const xhr = new XMLHttpRequest();
-                xhr.open("PUT", "https://61867a63cd8530001765ab06.mockapi.io/olhafa/orderNum/"+x);
-                xhr.setRequestHeader("Content-type", "application/json")
-                xhr.onload = () => {
-                    const data = xhr.response;
-                    console.log(data);
-                };
-            xhr.send(json);
-*/
             document.getElementById('name' + i).textContent = name;
             document.getElementById('year' + i).textContent = year;
-            document.getElementById('img' + i).src = imgPath;
-            // document.getElementById('i').innerHTML = i;
-            //document.getElementById("demo").innerHTML = "Nice gefunden";
-            
+            document.getElementById('img' + i).src = imgPath;          
         }
         else {
             document.getElementById('i').innerHTML = i;
@@ -88,7 +71,6 @@ function loadPresidentTask() {
         var imgPath = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/1200px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
 
         console.log(randomID);
-        // console.log(document.getElementById(presidentImg).src);
         document.getElementById("level2presidentImg").src = imgPath;
         document.getElementById("level2presidentImg").name = "george washington"
     } else if (randomID == 1) {
@@ -96,7 +78,6 @@ function loadPresidentTask() {
         var imgPath = "https://upload.wikimedia.org/wikipedia/commons/4/44/Abraham_Lincoln_head_on_shoulders_photo_portrait.jpg"
 
         console.log(randomID);
-        // console.log(document.getElementById(presidentImg).src);
         document.getElementById("level2presidentImg").src = imgPath;
         document.getElementById("level2presidentImg").name = "abraham lincoln"
     } else if (randomID == 2) {
@@ -104,7 +85,6 @@ function loadPresidentTask() {
         var imgPath = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BenFranklinDuplessis.jpg/1200px-BenFranklinDuplessis.jpg"
 
         console.log(randomID);
-        // console.log(document.getElementById(presidentImg).src);
         document.getElementById("level2presidentImg").src = imgPath;
         document.getElementById("level2presidentImg").name = "benjamin franklin"
     }
@@ -112,7 +92,7 @@ function loadPresidentTask() {
 
 function Level2CheckPresidentName() {
     let inputValue = document.getElementById("level2presidentName").value;
-    // console.log(inputValue.toLowerCase());
+
     if (inputValue.toLowerCase() == document.getElementById("level2presidentImg").name) {
         var presidentNameAPI = document.getElementById("level2presidentImg").name;
         const postData = {
@@ -158,14 +138,8 @@ async function getNumberBlocks() {
                 var { Klettercluster } = data;
                 
             if (Klettercluster == "20"|| Klettercluster == "22"|| Klettercluster == "23"|| Klettercluster == "25"|| Klettercluster == "27"|| Klettercluster == "29") {
-                /*
-                    document.getElementById('i').innerHTML = i;
-                    document.getElementById('Kletterpunkt').innerHTML = Klettercluster;
-                    document.getElementById("status").innerHTML = "Kletterpunkt gefunden";
-                */
-                var checkKP = document.getElementById(Klettercluster).id;
 
-                // document.getElementById('CheckKP').innerHTML = checkKP;
+                var checkKP = document.getElementById(Klettercluster).id;
 
                 if (Klettercluster == checkKP) {
                     document.getElementById(Klettercluster).style.visibility = "visible"; 
@@ -173,15 +147,9 @@ async function getNumberBlocks() {
                 else{}
 
                 x++;
-
-               //document.getElementById("x").innerHTML = x;
             }
             else {
-                /*
-                document.getElementById('i').innerHTML = i;
-                document.getElementById('Kletterpunkt').innerHTML = Klettercluster;
-                document.getElementById("status").innerHTML = "Kletterpunkt nicht gefunden";
-                */
+
                 }
         }
 }
@@ -220,11 +188,6 @@ function getLevelFour() {
 }
 
 // Level Four App App
-/*
-function Level4Invisible() {
-    L4Game2and3.style.visibility='hidden'; 
-}
-*/
 var i = 1;
 
 async function checkKletterRoute() {
@@ -244,7 +207,6 @@ async function checkKletterRoute() {
 
             i++;
 
-            // document.getElementById("level4NumberCard"+i).class = "level4NumberCardDivCorrect";
             alert("Das war richtig! Gratuliere!");
             if (id >= 5) {
                 alert("Cool! Du bist fertig, weiter mit der nächsten Aufgabe!");
