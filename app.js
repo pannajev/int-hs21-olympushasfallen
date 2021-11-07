@@ -64,10 +64,72 @@ function getLevelThree() {
 }
 
 // Level Three App
-// Level Three App -> Level Four Decription
-function getNumberBlocks() {
-    window.location.href = 'levelfour_des.html';
+var numbers = ["1", "2", "3", "4", "5", "6", "7", "8","9","10"]
+var x = 0;
+
+async function getNumberBlocks() {
+    if (x <= 6) {
+        
+        var i = numbers.splice(Math.random() * numbers.length, 1)[0];
+                
+                var api = "https://61867a63cd8530001765ab06.mockapi.io/olhafa/telnumbers/" + i;
+                var response = await fetch(api);
+                var data = await response.json();
+                var { Klettercluster } = data;
+                
+            if (Klettercluster == "20"|| Klettercluster == "22"|| Klettercluster == "23"|| Klettercluster == "25"|| Klettercluster == "27"|| Klettercluster == "29") {
+                document.getElementById('i').innerHTML = i;
+                document.getElementById('Kletterpunkt').innerHTML = Klettercluster;
+                document.getElementById("status").innerHTML = "Kletterpunkt gefunden";
+
+                var checkKP = document.getElementById(Klettercluster).id;
+
+                document.getElementById('CheckKP').innerHTML = checkKP;
+
+                if (Klettercluster == checkKP) {
+                    document.getElementById(Klettercluster).style.display = "block"; 
+                }
+                else{}
+
+                x++;
+
+                document.getElementById("x").innerHTML = x;
+            }
+            else {
+                document.getElementById('i').innerHTML = i;
+                document.getElementById('Kletterpunkt').innerHTML = Klettercluster;
+                document.getElementById("status").innerHTML = "Kletterpunkt nicht gefunden";
+                }
+        }
 }
+
+function clearInput() {
+    document.getElementById("telnum").value = "";
+}
+
+function putNum(val) {
+    result = document.getElementById('telnum');
+    result.value = result.value + val;
+}
+
+function checkNumber() {
+    let inputValue = document.getElementById("telnum").value;
+    var soltelnum = "01-562-6917439"
+    if (inputValue.toLowerCase() == soltelnum) {
+
+        alert("Das war richtig! Gratuliere!");
+
+        window.location.href = 'levelfour_des.html';
+
+    } else {
+
+        alert("Das war falsch :(\n\nProbiere es nochmal...");
+
+    };
+}
+
+// Level Three App -> Level Four Decription
+
 
 // Level Four Decription -> Level Four Game
 function getLevelFour() {
