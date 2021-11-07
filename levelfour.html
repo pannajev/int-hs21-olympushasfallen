@@ -16,11 +16,14 @@
     <h1 class="w3-center w3-padding-16" >Bunker muss verschlossen werden</h1>
 
     <!-- Level 4 Aufgabe von Level 1 -->
-    <p class="w3-center w3-padding-16">
-    <button onclick="getLevelFour()">Scan RFID</button> &nbsp;&nbsp;&nbsp;&nbsp; i: <span id="i"></span> &nbsp;&nbsp;&nbsp;&nbsp; Status: <span id="status"></span><br />
+    <div class="w3-center w3-padding-16">
+        <div class="level4Input">
+            <input id="level4TestRouteNumber" type="text" placeholder="TEST: Welche route geklettert...">
+        </div>
+    <button onclick="checkKletterRoute()">Scan RFID</button> i: <span id="i"></span> Status: <span id="status"></span><br />
     Klettere nochmals die Route welche im Level 1 geklettert wurde um den Code einzugeben
     <br /><br /><br />
-    </p>
+    </div>
 
     <!-- Level 4 Aufgabe von Level 2 -->
     <p class="w3-center w3-padding-16">

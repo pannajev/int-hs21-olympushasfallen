@@ -220,6 +220,30 @@ function getLevelFour() {
 }
 
 // Level Four App App
+
+var i = 1;
+
+async function checkKletterRoute() {
+    let kletterRouteID = document.getElementById("level4TestRouteNumber").value;
+
+    var api = "https://61867a63cd8530001765ab06.mockapi.io/olhafa/orderNum/" + i;
+    var response = await fetch(api);
+    var data = await response.json();
+    var { orderNumber, id } = data;
+    console.log(orderNumber, id);
+
+    if (kletterRouteID == orderNumber) {
+            i++;
+            alert("Das war richtig! Gratuliere!");
+            if (id >= 5) {
+                alert("Cool! Du bist fertig, weiter mit der nächsten Aufgabe!");
+            }
+     } else {
+            alert("Das war falsch :(\n\nProbiere es nochmal...");
+        } 
+    }
+
+
 // Level Four App -> End Game
 function getRepeat() {
     window.location.href = 'end.html'
