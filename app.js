@@ -89,6 +89,18 @@ function Level2CheckPresidentName() {
     let inputValue = document.getElementById("level2presidentName").value;
     // console.log(inputValue.toLowerCase());
     if (inputValue.toLowerCase() == document.getElementById("level2presidentImg").name) {
+        var presidentNameAPI = document.getElementById("level2presidentImg").name;
+        const postData = {
+            "presidentName": presidentNameAPI,
+        }    
+            fetch('https://61867a63cd8530001765ab06.mockapi.io/olhafa/presidentName/1', {
+                method: 'put',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(postData)
+            });
+
         alert("Das war richtig! Gratuliere!");
         window.location.href = 'levelthree_des.html';
     } else {
