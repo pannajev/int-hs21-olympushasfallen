@@ -1,4 +1,20 @@
-// Randomizer for Zahlen von 1 - 10
+// Startsite 
+function getIndex() {
+    window.location.href = 'index.html';
+}
+// Begin with Level One Description
+function getLevelOneDes() {
+    window.location.href = 'levelone_des.html';
+}
+
+///// GAME /////------------------------------------------------------
+
+// Level One Description -> Level One App
+function getLevelOne() {
+    window.location.href = 'levelone.html';
+}
+
+// Level One App
 var numbers = ["1", "2", "3", "4", "5", "6", "7", "8",]
 var x = 0;
 
@@ -26,11 +42,42 @@ async function getPresidents() {
         }
     }
     else {
-        //document.getElementById("demo").innerHTML = "Next Page"
-        window.location.href = 'index.html';
+// Level One App -> Level Two Decription
+        window.location.href = 'leveltwo_des.html';
     }
 }
 
-function getLevelOne() {
-    window.location.href = 'levelone.html';
+// Level Two Description -> Level Two App
+function getLevelTwo() {
+    window.location.href = 'leveltwo.html';
 }
+
+// Level Two App
+// Level Two App -> Level Three Decription
+function getPresidentName() {
+    window.location.href = 'levelthree_des.html';
+}
+
+// Level Three Decription -> Level Three App
+function getLevelThree() {
+    window.location.href = 'levelthree.html';
+}
+
+// Level Three App
+// Level Three App -> Level Four Decription
+function getNumberBlocks() {
+    window.location.href = 'levelfour_des.html';
+}
+
+// Level Four Decription -> Level Four Game
+function getLevelFour() {
+    window.location.href = 'levelfour.html';
+}
+
+// Level Four App App
+// Level Four App -> End Game
+function getRepeat() {
+    window.location.href = 'end.html'
+}
+
+///// GAME /////------------------------------------------------------
