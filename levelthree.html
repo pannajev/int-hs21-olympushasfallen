@@ -18,32 +18,34 @@
         i: <span id="i"></span> &nbsp;&nbsp;&nbsp;&nbsp; Kletterpunkt: <span id="Kletterpunkt"></span></p><br /> 
         Status: <span id="status"></span></p> CheckKP: <span id="CheckKP"></span> x: <span id="x"></span>
     -->
-        <div class="w3-center w3-padding-16" >
-            <h1>Zentrale anrufen</h1>
-            <p>Tippe die Telefonnummer ein um die Stimmerkennung des Präsidenten durchzuführen</p>
-            <button onclick="getNumberBlocks()">Scan RFID</button>
-            <p><input type="text" id="telnum" name="Telefonnummer"><button onclick="clearInput()">Clear Input</button>
-            <input type="submit" style="display: none;" id="20" value="01" onclick="putNum(this.value);">
+    <div class="w3-center w3-padding-16">
+        <h1>Zentrale anrufen</h1>
+        <p>Tippe die Telefonnummer ein um die Stimmerkennung des Präsidenten durchzuführen</p>
+        <button onclick="getNumberBlocks()">Scan RFID</button>
+        <p><input type="text" id="telnum" name="Telefonnummer"><button onclick="clearInput()">Clear Input</button>
+        <div>
+            <input class="level3Margin1" type="submit" style="margin-left: 1000; visibility: hidden;" id="20" value="01" onclick="putNum(this.value);">
             <br />
             <br />
-            <input type="submit" style="display: none;" id="22" value="-" onclick="putNum(this.value);">
+            <input class="level3Margin2" type="submit" style="margin-left: 800; visibility: hidden;" id="22" value="-" onclick="putNum(this.value);">
             <br />
             <br />
-            <input type="submit" style="display: none;" id="23" value="562" onclick="putNum(this.value);">
+            <input class="level3Margin3" type="submit" style="margin-left: 900; visibility: hidden;" id="23" value="562" onclick="putNum(this.value);">
             <br />
             <br />
-            <input type="submit" style="display: none;" id="25" value="-" onclick="putNum(this.value);">
+            <input class="level3Margin4" type="submit" style="margin-left: 100; visibility: hidden;" id="25" value="-" onclick="putNum(this.value);">
             <br />
             <br />
-            <input type="submit" style="display: none;" id="27" value="691" onclick="putNum(this.value);">
+            <input class="level3Margin5" type="submit" style="margin-left: 500; visibility: hidden;" id="27" value="691" onclick="putNum(this.value);">
             <br />
             <br />
-            <input type="submit" style="display: none;" id="29" value="7439" onclick="putNum(this.value);">
+            <input class="level3Margin1" type="submit" style="margin-left: 200; visibility: hidden;" id="29" value="7439" onclick="putNum(this.value);">
             <br />
             <br />
             <br />
             <br />
             <br />
+        </div>
         <button type="button" id="CheckeNumber" onclick="checkNumber()">Check Number</button>
     </div>
 

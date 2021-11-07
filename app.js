@@ -168,7 +168,7 @@ async function getNumberBlocks() {
                 // document.getElementById('CheckKP').innerHTML = checkKP;
 
                 if (Klettercluster == checkKP) {
-                    document.getElementById(Klettercluster).style.display = "block"; 
+                    document.getElementById(Klettercluster).style.visibility = "visible"; 
                 }
                 else{}
 

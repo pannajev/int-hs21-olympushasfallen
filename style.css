@@ -95,3 +95,24 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     width: 500px;
     margin: auto;
 }
+
+.level3Margin1 {
+    margin-left: 400px;
+}
+
+.level3Margin2 {
+    margin-right: 100px;
+}
+
+.level3Margin3 {
+    margin-left: 100px;
+}
+.level3Margin4 {
+    margin-right: 150px;
+}
+.level3Margin5 {
+    margin-left: 200px;
+}
+.level3Margin6 {
+    margin-right: 300px;
+}
