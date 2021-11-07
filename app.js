@@ -220,6 +220,7 @@ function getLevelFour() {
 }
 
 // Level Four App App
+<<<<<<< HEAD
 
 var i = 1;
 
@@ -243,6 +244,19 @@ async function checkKletterRoute() {
         } 
     }
 
+=======
+async function Level4CheckPresidentName() {
+    let inputValueL4 = document.getElementById("level4presidentName").value;
+            var response = await fetch("https://61867a63cd8530001765ab06.mockapi.io/olhafa/presidentName/1");
+            var data = await response.json();
+            var { presidentName } = data;
+    if (inputValueL4.toLowerCase() == presidentName) {
+        alert("Das war richtig! Gratuliere!");
+    } else {
+        alert("Das war falsch :(\n\nProbiere es nochmal...");
+    };
+}
+>>>>>>> 110495e09f9ab2a03fbef32c7c7d62a16fa0ef17
 
 // Level Four App -> End Game
 function getRepeat() {
