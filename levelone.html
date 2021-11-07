@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Request</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <script src="./app.js"></script>
 </head>
@@ -14,52 +15,87 @@
 <body>
     <br />
     <button onclick="getPresidents()">Scan RFID</button>
-    <h1>Memorial Room</h1>
+    <h1 class="w3-center w3-padding-16" >Memorial Room</h1>
     <p>
         i: <span id="i"></span>
         <br />
         Status: <span id="demo"></span>
     </p>
     
+    <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="presidentDiv" >
+                <img class="presidentImg" id="img1" src="">
+                <h3><span id="name1"></span></h3>
+                <p id="year1"></p>
+            </div>
+
+            <div class="presidentDiv" >
+                <img class="presidentImg" id="img2" src="">
+                <h3><span id="name2"></h3>
+                <p id="year2"></p>
+            </div>
+
+            <div class="presidentDiv" >
+                <img class="presidentImg" id="img3" src="">
+                <h3><span id="name3"></h3>
+                <p id="year3"></p>
+            </div>
+
+            <div class="presidentDiv" >
+                <img class="presidentImg" id="img4" src="">
+                <h3><span id="name4"></h3>
+                <p id="year4"></p>
+            </div>
+
+            <div class="presidentDiv" >
+                <img class="presidentImg" id="img5" src="">
+                <h3><span id="name5"></h3>
+                <p id="year5"></p>
+            </div>
+    </div>
+
+
+    <!-- 
     <table>
         <tr>
             <td>
-                <div height="200">
-                    <img id="img1" src="" height="200">
+                <div>
+                    <img id="img1" src="">
                     <h3><span id="name1"></span></h3>
                     <p id="year1"></p>
                 </div>
             </td>
             <td>
-                <div style="border-style:dotted" height="200">
-                    <img id="img2" src="" height="200">
+                <div >
+                    <img id="img2" src="">
                     <h3><span id="name2"></h3>
                     <p id="year2"></p>
                 </div>
             </td>
             <td>
-                <div style="border-style:dotted" height="200">
-                    <img id="img3" src="" height="200">
+                <div >
+                    <img id="img3" src="">
                     <h3><span id="name3"></h3>
                     <p id="year3"></p>
                 </div>
             </td>
             <td>
-                <div style="border-style:dotted" height="200">
-                    <img id="img4" src="" height="200">
+                <div >
+                    <img id="img4" src="">
                     <h3><span id="name4"></h3>
                     <p id="year4"></p>
                 </div>
             </td>
             <td>
-                <div style="border-style:dotted" height="200">
-                    <img id="img5" src="" height="200">
+                <div >
+                    <img id="img5" src="">
                     <h3><span id="name5"></h3>
                     <p id="year5"></p>
                 </div>
             </td>
         </tr>
     </table>
+     -->
 
 </body>
 
