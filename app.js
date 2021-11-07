@@ -56,9 +56,9 @@ function getLevelTwo() {
 
 function loadPresidentTask() {
     
-    var randomID = Math.floor(Math.random() * 4)
+    var randomID = Math.floor(Math.random() * 3)
 
-    if (randomID == 1) {
+    if (randomID == 0) {
 
         var imgPath = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/1200px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
 
@@ -66,7 +66,7 @@ function loadPresidentTask() {
         // console.log(document.getElementById(presidentImg).src);
         document.getElementById("presidentImg").src = imgPath;
         document.getElementById("presidentImg").name = "george washington"
-    } else if (randomID == 2) {
+    } else if (randomID == 1) {
         
         var imgPath = "https://upload.wikimedia.org/wikipedia/commons/4/44/Abraham_Lincoln_head_on_shoulders_photo_portrait.jpg"
 
@@ -74,7 +74,7 @@ function loadPresidentTask() {
         // console.log(document.getElementById(presidentImg).src);
         document.getElementById("presidentImg").src = imgPath;
         document.getElementById("presidentImg").name = "abraham lincoln"
-    } else if (randomID == 3) {
+    } else if (randomID == 2) {
         
         var imgPath = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BenFranklinDuplessis.jpg/1200px-BenFranklinDuplessis.jpg"
 
