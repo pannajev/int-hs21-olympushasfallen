@@ -53,6 +53,49 @@ function getLevelTwo() {
 }
 
 // Level Two App
+
+function loadPresidentTask() {
+    
+    var randomID = Math.floor(Math.random() * 4)
+
+    if (randomID == 1) {
+
+        var imgPath = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/1200px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
+
+        console.log(randomID);
+        // console.log(document.getElementById(presidentImg).src);
+        document.getElementById("presidentImg").src = imgPath;
+        document.getElementById("presidentImg").name = "george washington"
+    } else if (randomID == 2) {
+        
+        var imgPath = "https://upload.wikimedia.org/wikipedia/commons/4/44/Abraham_Lincoln_head_on_shoulders_photo_portrait.jpg"
+
+        console.log(randomID);
+        // console.log(document.getElementById(presidentImg).src);
+        document.getElementById("presidentImg").src = imgPath;
+        document.getElementById("presidentImg").name = "abraham lincoln"
+    } else if (randomID == 3) {
+        
+        var imgPath = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BenFranklinDuplessis.jpg/1200px-BenFranklinDuplessis.jpg"
+
+        console.log(randomID);
+        // console.log(document.getElementById(presidentImg).src);
+        document.getElementById("presidentImg").src = imgPath;
+        document.getElementById("presidentImg").name = "benjamin franklin"
+    }
+}
+
+function Level2CheckPresidentName() {
+    let inputValue = document.getElementById("presidentName").value;
+    // console.log(inputValue.toLowerCase());
+    if (inputValue.toLowerCase() == document.getElementById("presidentImg").name) {
+        alert("Das war richtig! Gratuliere!");
+        window.location.href = 'levelthree_des.html';
+    } else {
+        alert("Das war falsch :(\n\nProbiere es nochmal...");
+    };
+}
+
 // Level Two App -> Level Three Decription
 function getPresidentName() {
     window.location.href = 'levelthree_des.html';
