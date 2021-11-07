@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bunker</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <script src="./app.js"></script>
 </head>
@@ -20,10 +21,33 @@
         <div class="level4Input">
             <input id="level4TestRouteNumber" type="text" placeholder="TEST: Welche route geklettert...">
         </div>
-    <button onclick="checkKletterRoute()">Scan RFID</button> i: <span id="i"></span> Status: <span id="status"></span><br />
+    <button id="level4KletterRouteButton" onclick="checkKletterRoute()">Scan RFID</button> i: <span id="i"></span> Status: <span id="status"></span><br />
     Klettere nochmals die Route welche im Level 1 geklettert wurde um den Code einzugeben
     <br /><br /><br />
+
+    <div class="level4NumberCardWrapper">
+        <div id="level4NumberCard1" class="level4NumberCardDivDefault" >
+            <h2><b>1</b></h2>
+        </div>
+
+        <div id="level4NumberCard2" class="level4NumberCardDivDefault" >
+            <h2><b>2</b></h2>
+        </div>
+
+        <div id="level4NumberCard3" class="level4NumberCardDivDefault" >
+            <h2><b>3</b></h2>
+        </div>
+
+        <div id="level4NumberCard4" class="level4NumberCardDivDefault" >
+            <h2><b>4</b></h2>
+        </div>
+
+        <div id="level4NumberCard5" class="level4NumberCardDivDefault" >
+            <h2><b>5</b></h2>
+        </div>
     </div>
+
+
 
     <!-- Level 4 Aufgabe von Level 2 -->
     <p class="w3-center w3-padding-16">

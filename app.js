@@ -132,10 +132,6 @@ function Level2CheckPresidentName() {
     };
 }
 
-// Event Listener Funktion für Enter Eingabe beim Präsidentennamen
-// var input = document.getElementById("level2InputButton");
-// input.addEventListener("keyup", function(event)) 
-
 // Level Two App -> Level Three Decription
 function getPresidentName() {
     window.location.href = 'levelthree_des.html';
@@ -233,13 +229,21 @@ async function checkKletterRoute() {
     console.log(orderNumber, id);
 
     if (kletterRouteID == orderNumber) {
+            console.log("level4NumberCard"+i);
+            console.log("i ist jetzt:"+i);
+
+            document.getElementById("level4NumberCard"+i).className = "level4NumberCardDivCorrect";
+
             i++;
+
+            // document.getElementById("level4NumberCard"+i).class = "level4NumberCardDivCorrect";
             alert("Das war richtig! Gratuliere!");
             if (id >= 5) {
                 alert("Cool! Du bist fertig, weiter mit der nächsten Aufgabe!");
             }
      } else {
             alert("Das war falsch :(\n\nProbiere es nochmal...");
+            document.getElementById("level4NumberCard"+i).className = "level4NumberCardDivWrong";
         } 
     }
 

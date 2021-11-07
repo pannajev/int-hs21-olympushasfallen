@@ -1,6 +1,5 @@
 h1{
     color:black;
-    background: white;
     padding: 30px;
 }
 
@@ -55,4 +54,44 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
     max-height: 600px;
     padding-top: 20px;
     margin: auto
+}
+
+.level4NumberCard {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin: auto;
+}
+
+.level4NumberCardDivDefault {
+    height: 70px;
+    float: left;
+    width: 70px;
+    border: 5px solid black;
+    background-color: white;
+    margin-right: 20px;
+}
+
+.level4NumberCardDivCorrect {
+    height: 70px;
+    float: left;
+    width: 70px;
+    border: 5px solid black;
+    background-color: green;
+    margin-right: 20px;
+}
+
+.level4NumberCardDivWrong {
+    height: 70px;
+    float: left;
+    width: 70px;
+    border: 5px solid black;
+    background-color: red;
+    margin-right: 20px;
+}
+
+.level4NumberCardWrapper {
+    height: 110px;
+    width: 500px;
+    margin: auto;
 }
