@@ -15,11 +15,11 @@ function getLevelOne() {
 }
 
 // Level One App
-var numbers = ["1", "2", "3", "4", "5", "6", "7", "8",]
+var numbersL1 = ["1", "2", "3", "4", "5", "6"]
 var x = 0;
 
 async function getPresidents() {
-    var i = numbers.splice(Math.random() * numbers.length, 1)[0];
+    var i = numbersL1.splice(Math.random() * numbersL1.length, 1)[0];
     if (x <= 4) {
         if (i > 0 && i < 6) {
             x++;
@@ -56,9 +56,10 @@ async function getPresidents() {
 */
             document.getElementById('name' + i).textContent = name;
             document.getElementById('year' + i).textContent = year;
-            document.getElementById('i').innerHTML = i;
-            document.getElementById("demo").innerHTML = "Nice gefunden";
             document.getElementById('img' + i).src = imgPath;
+            // document.getElementById('i').innerHTML = i;
+            //document.getElementById("demo").innerHTML = "Nice gefunden";
+            
         }
         else {
             document.getElementById('i').innerHTML = i;
@@ -67,7 +68,7 @@ async function getPresidents() {
     }
     else {
 // Level One App -> Level Two Decription
-        window.location.href = 'leveltwo_des.html';
+            window.location.href = 'leveltwo_des.html';
     }
 }
 
@@ -157,13 +158,14 @@ async function getNumberBlocks() {
                 var { Klettercluster } = data;
                 
             if (Klettercluster == "20"|| Klettercluster == "22"|| Klettercluster == "23"|| Klettercluster == "25"|| Klettercluster == "27"|| Klettercluster == "29") {
-                document.getElementById('i').innerHTML = i;
-                document.getElementById('Kletterpunkt').innerHTML = Klettercluster;
-                document.getElementById("status").innerHTML = "Kletterpunkt gefunden";
-
+                /*
+                    document.getElementById('i').innerHTML = i;
+                    document.getElementById('Kletterpunkt').innerHTML = Klettercluster;
+                    document.getElementById("status").innerHTML = "Kletterpunkt gefunden";
+                */
                 var checkKP = document.getElementById(Klettercluster).id;
 
-                document.getElementById('CheckKP').innerHTML = checkKP;
+                // document.getElementById('CheckKP').innerHTML = checkKP;
 
                 if (Klettercluster == checkKP) {
                     document.getElementById(Klettercluster).style.display = "block"; 
@@ -172,12 +174,14 @@ async function getNumberBlocks() {
 
                 x++;
 
-                document.getElementById("x").innerHTML = x;
+               //document.getElementById("x").innerHTML = x;
             }
             else {
+                /*
                 document.getElementById('i').innerHTML = i;
                 document.getElementById('Kletterpunkt').innerHTML = Klettercluster;
                 document.getElementById("status").innerHTML = "Kletterpunkt nicht gefunden";
+                */
                 }
         }
 }
@@ -216,7 +220,11 @@ function getLevelFour() {
 }
 
 // Level Four App App
-
+/*
+function Level4Invisible() {
+    L4Game2and3.style.visibility='hidden'; 
+}
+*/
 var i = 1;
 
 async function checkKletterRoute() {
@@ -260,8 +268,20 @@ async function Level4CheckPresidentName() {
 }
 
 // Level Four App -> End Game
-function getRepeat() {
-    window.location.href = 'end.html'
+function checkNumberL4() {
+    let inputValueL4 = document.getElementById("telnumL4").value;
+    var soltelnum = "01-562-6917439"
+    if (inputValueL4.toLowerCase() == soltelnum) {
+
+        alert("Das war richtig! Gratuliere!");
+
+        window.location.href = 'end.html';
+
+    } else {
+
+        alert("Das war falsch :(\n\nProbiere es nochmal...");
+
+    };
 }
 
 ///// GAME /////------------------------------------------------------

@@ -7,22 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Request</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <script src="./app.js"></script>
 </head>
 
 <body>
-    <br />
-    <button onclick="getPresidents()">Scan RFID</button>
-    <h1 class="w3-center w3-padding-16" >Memorial Room</h1>
+    <div class="w3-row-padding w3-padding-16 w3-center">
+        <h1 class="w3-center w3-padding-16" >Memorial Room</h1>
+        <button onclick="getPresidents()">Scan RFID</button>
+    </div>
+<!--
     <p>
         i: <span id="i"></span>
         <br />
         Status: <span id="demo"></span>
     </p>
-    
+-->
     <div class="w3-row-padding w3-padding-16 w3-center">
+                <br />
             <div class="presidentDiv" >
                 <img class="presidentImg" id="img1" src="">
                 <h3><span id="name1"></span></h3>
