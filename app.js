@@ -220,6 +220,18 @@ function getLevelFour() {
 }
 
 // Level Four App App
+async function Level4CheckPresidentName() {
+    let inputValueL4 = document.getElementById("level4presidentName").value;
+            var response = await fetch("https://61867a63cd8530001765ab06.mockapi.io/olhafa/presidentName/1");
+            var data = await response.json();
+            var { presidentName } = data;
+    if (inputValueL4.toLowerCase() == presidentName) {
+        alert("Das war richtig! Gratuliere!");
+    } else {
+        alert("Das war falsch :(\n\nProbiere es nochmal...");
+    };
+}
+
 // Level Four App -> End Game
 function getRepeat() {
     window.location.href = 'end.html'
