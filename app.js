@@ -26,6 +26,7 @@ async function getPresidents() {
         }
     }
     else {
-        document.getElementById("demo").innerHTML = "Next Page"
+        //document.getElementById("demo").innerHTML = "Next Page"
+        window.location.href = 'levelone.html';
     }
 }
