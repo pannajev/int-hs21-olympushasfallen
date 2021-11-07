@@ -7,18 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oval Office</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <script src="./app.js"></script>
 </head>
 
-<body>
-    <h1>Oval Office</h1>
-    <br />
-    <button onclick="getPresidentName()">Scan RFID</button>
-    <p>
-        i: <span id="i"></span>
-        <br />
-        Status: <span id="demo"></span>
-    </p>
+<body onload="loadPresidentTask()">
+
+    <div class="w3-center w3-padding-16">
+        <h1>Tippe den Passcode ein!</h1>
+
+        <div class="level2Grid">
+            <div>
+                <p>Wer ist das?</p>
+            </div>
+            <div class="level2Input">
+                <input id="presidentName" type="text" placeholder="Vorname Nachname ...">
+            </div>
+            <div class="level2Input">
+                <button onclick="Level2CheckPresidentName()">Lösen...</button>
+            </div>
+            <div>
+                <img id="presidentImg" class="level2Img" name="" src="">
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
