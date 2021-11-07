@@ -11,7 +11,7 @@
     <script src="./app.js"></script>
 </head>
 
-<body>
+<body onload="Level4Invisible()">
     <!-- Titel -->
     <h1 class="w3-center w3-padding-16" >Bunker muss verschlossen werden</h1>
 
@@ -26,18 +26,21 @@
     </div>
 
     <!-- Level 4 Aufgabe von Level 2 -->
-    <p class="w3-center w3-padding-16">
-    Verifizieren Sie sich als Präsidenten mit dem Passcode
-    <br />
-    <input id="level4presidentName" type="text" placeholder="Vorname Nachname...">
-    <button onclick="Level4CheckPresidentName()">Check Name</button>
-    </p>
+    <div id="L4Game2and3">
+        <div id="L4Game2">
+            <div class="w3-center w3-padding-16">
+                Verifizieren Sie sich als Präsidenten mit dem Passcode
+                <br />
+                <input id="level4presidentName" type="text" placeholder="Vorname Nachname...">
+                <button onclick="Level4CheckPresidentName()">Check Name</button>
+            </div>
+        </div>
 
     <!-- Level 4 Aufgabe von Level 3 -->
     <p class="w3-center w3-padding-16">
     Rufen Sie die zentrale an um die Bestätigung zu geben, dass sie in Sicherheit sind
     <br />
-    <input type="text" id="telnum" name="Telefonnummer" placeholder="Telefonnummer..."><button onclick="clearInput()">Clear Input</button>
+    <input type="text" id="telnumL4" name="Telefonnummer" placeholder="Telefonnummer..."><button onclick="clearInput()">Clear Input</button>
     </p>
 
     <!-- Nummernblock-->
@@ -58,9 +61,9 @@
         <input type="submit" value="0" onclick="putNum(this.value);">
         <input type="submit" value="+" onclick="putNum(this.value);">
         <br /><br /> 
-        <button onclick="checkNumber()">Call</button>
+        <button onclick="checkNumberL4()">Call</button>
     </p>
-    
+    </div>  
 </body>
 
 </html>
