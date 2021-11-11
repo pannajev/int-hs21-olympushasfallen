@@ -159,7 +159,7 @@ function clearInput() {
 }
 
 function putNum(val) {
-    result = document.getElementById('telnum');
+    result = document.getElementById('telnumL4');
     result.value = result.value + val;
 }
 
